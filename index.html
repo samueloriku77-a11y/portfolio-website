@@ -39,6 +39,7 @@
             </h2>
             <div class="hero-buttons">
                 <a href="#projects" class="btn glass-btn glowing-btn">View My Projects</a>
+                <a href="samuelcv.pdf" target="_blank" class="btn glass-btn">View CV</a>
                 <a href="samuelcv.pdf" class="btn glass-btn glowing-btn" download>Download CV</a>
             </div>
         </div>
@@ -170,6 +171,26 @@
     <footer id="contact" class="footer glass-panel">
         <div class="footer-container">
             <h2 class="fade-in">Get In Touch</h2>
+            <div class="glass-panel contact-form-container fade-in" style="margin-bottom: 4rem;">
+                <form action="https://formspree.io/f/mqakppov" method="POST" id="contact-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="_replyto" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-top: 1.5rem;">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" placeholder="How can I help you?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn glass-btn glowing-btn" style="margin-top: 2rem; width: 100%;">Send Message</button>
+                    <div id="form-status" style="margin-top: 1rem; font-weight: 600; display: none;"></div>
+                </form>
+            </div>
             <div class="contact-grid fade-in">
                 <div class="contact-item">
                     <span class="contact-label">Phone</span>
